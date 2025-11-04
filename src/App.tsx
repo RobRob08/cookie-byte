@@ -4,11 +4,12 @@ import { Redirect, Route } from 'react-router-dom';
 
 // Import your pages and components
 import Menu from './components/Menu';
-import Profile from './pages/Profile';
+import Developers from './pages/Developers';
 import Cart from './pages/Cart';
-import OrderHistory from './pages/OrderHistory';
+import CompanyHistory from './pages/CompanyHistory';
 import HomePage from './pages/Home';
-import ProductPage from './pages/Products';
+import AboutApp from './pages/AboutApp';
+import ContactUs from './pages/ContactUs';
 
 // Import Cart Context
 import { CartProvider } from './context/cartContext'; // Import CartProvider to share cart state globally
@@ -51,10 +52,11 @@ const App: React.FC = () => {
                 <Redirect to="/home" /> {/* Redirect to Home page */}
               </Route>
               <Route path="/home" component={HomePage} />
-              <Route path="/profile" component={Profile} />
+              <Route path="/developers" component={Developers} />
               <Route path="/cart" component={Cart} />
-              <Route path="/order-history" component={OrderHistory} />
-              <Route path="/products" component={ProductPage} />
+              <Route path="/company-history" component={CompanyHistory} />
+              <Route path="/about-app" component={AboutApp} />
+              <Route path="/contact-us" component={ContactUs} />
               <Route path="/login" component={Login} />
               <Route path="/signup" component={Signup} />
             </IonRouterOutlet>

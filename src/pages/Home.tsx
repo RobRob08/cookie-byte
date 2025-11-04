@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
             <IonButtons slot="start">
               <IonMenuButton />
             </IonButtons>
-          <IonTitle>Cookie Shop</IonTitle>
+          <IonTitle>Cookie Byte</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

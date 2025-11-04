@@ -23,16 +23,10 @@ interface AppPage {
 
 const appPages: AppPage[] = [
   {
-    title: 'Home',
+    title: 'Our Products',
     url: '/home',
     iosIcon: homeOutline,
     mdIcon: homeOutline,
-  },
-  {
-    title: 'Profile',
-    url: '/profile',
-    iosIcon: personCircleOutline,
-    mdIcon: personCircleOutline,
   },
   {
     title: 'Cart',
@@ -41,14 +35,26 @@ const appPages: AppPage[] = [
     mdIcon: cartOutline,
   },
   {
-    title: 'Order History',
-    url: '/order-history',
+    title: 'Company History',
+    url: '/company-history',
     iosIcon: clipboardOutline,
     mdIcon: clipboardOutline,
   },
   {
-    title: 'Product Page',
-    url: '/products',
+    title: 'About the App',
+    url: '/about-app',
+    iosIcon: listCircleOutline,
+    mdIcon: listCircleOutline,
+  },
+  {
+    title: 'Developers',
+    url: '/developers',
+    iosIcon: personCircleOutline,
+    mdIcon: personCircleOutline,
+  },
+  {
+    title: 'Contact Us',
+    url: '/contact-us',
     iosIcon: listCircleOutline,
     mdIcon: listCircleOutline,
   },
