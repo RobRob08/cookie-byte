@@ -1,5 +1,10 @@
 import {
+  IonAvatar,
+  IonCard,
+  IonCardHeader,
+  IonCardSubtitle,
   IonContent,
+  IonHeader,
   IonIcon,
   IonItem,
   IonLabel,
@@ -11,7 +16,9 @@ import {
 } from '@ionic/react';
 
 import { useLocation } from 'react-router-dom';
-import { personOutline, listCircleOutline, personCircleOutline, cartOutline, clipboardOutline, homeOutline } from 'ionicons/icons'; // Example icons
+import { personOutline, listCircleOutline, personCircleOutline,
+  cartOutline, clipboardOutline, homeOutline, call, basketOutline
+  } from 'ionicons/icons'; // Example icons
 import './Menu.css';
 
 interface AppPage {
@@ -31,7 +38,7 @@ const appPages: AppPage[] = [
   {
     title: 'Cart',
     url: '/cart',
-    iosIcon: cartOutline,
+    iosIcon: basketOutline,
     mdIcon: cartOutline,
   },
   {
@@ -55,8 +62,8 @@ const appPages: AppPage[] = [
   {
     title: 'Contact Us',
     url: '/contact-us',
-    iosIcon: listCircleOutline,
-    mdIcon: listCircleOutline,
+    iosIcon: call,
+    mdIcon: call,
   },
   {
     title: 'Login',
@@ -71,12 +78,19 @@ const Menu: React.FC = () => {
 
   return (
     <IonMenu contentId="main" type="overlay">
+      <IonHeader>
+        <IonAvatar aria-hidden="true" slot="start">
+          <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </IonAvatar>   
+        <IonLabel>Hello, Yusah!
+        <IonCardSubtitle>09172091115</IonCardSubtitle></IonLabel>
+      </IonHeader>
       <IonContent>
         <IonList id="inbox-list">
-          <IonListHeader>Menu</IonListHeader>
+          <IonListHeader>Cookie Byte</IonListHeader>
           {appPages.map((appPage, index) => {
             return (
-              <IonMenuToggle key={index} autoHide={false}>
+              <IonMenuToggle key={index} autoHide={false} id="listkulay">
                 <IonItem
                   className={location.pathname === appPage.url ? 'selected' : ''}
                   routerLink={appPage.url}

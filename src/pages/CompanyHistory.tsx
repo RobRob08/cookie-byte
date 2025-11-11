@@ -1,4 +1,4 @@
-import '../design/CompHist.css';
+//import '../design/CompHist.css';
 import { IonContent, IonPage, IonHeader, IonToolbar, IonTitle,
   IonButtons,IonMenuButton, IonCard, IonCardContent } from '@ionic/react';
 

@@ -1,0 +1,4 @@
+/* Company History */
+.compHist ion-content{
+   --background: var(--ion-background-color, rgb(254, 242, 228));
+}
